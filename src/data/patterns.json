@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "Singleton",
+    "category": "Порождающий",
+    "complexity": 2,
+    "isGof": true,
+    "year": 1994,
+    "description": "Гарантирует, что у класса есть только один экземпляр",
+    "examples": ["Логгер", "Пул соединений", "Кэш"],
+    "popularity": 95
+  },
+  {
+    "id": "2",
+    "name": "Observer",
+    "category": "Поведенческий",
+    "complexity": 3,
+    "isGof": true,
+    "year": 1994,
+    "description": "Создает механизм подписки для оповещения объектов",
+    "examples": ["События", "Уведомления", "PubSub"],
+    "popularity": 88
+  },
+  {
+    "id": "3",
+    "name": "Factory Method",
+    "category": "Порождающий",
+    "complexity": 3,
+    "isGof": true,
+    "year": 1994,
+    "description": "Определяет интерфейс для создания объектов",
+    "examples": ["Создание документов", "Парсеры"],
+    "popularity": 92
+  },
+  {
+    "id": "4",
+    "name": "Strategy",
+    "category": "Поведенческий",
+    "complexity": 4,
+    "isGof": true,
+    "year": 1994,
+    "description": "Определяет семейство алгоритмов и делает их взаимозаменяемыми",
+    "examples": ["Сортировка", "Валидация"],
+    "popularity": 85
+  },
+  {
+    "id": "5",
+    "name": "Decorator",
+    "category": "Структурный",
+    "complexity": 4,
+    "isGof": true,
+    "year": 1994,
+    "description": "Динамически добавляет объектам новую функциональность",
+    "examples": ["Middleware", "Streams"],
+    "popularity": 90
+  }
+]

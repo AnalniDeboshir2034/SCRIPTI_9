@@ -1,0 +1,14 @@
+{
+  "name": "l910-framework",
+  "version": "1.0.0",
+  "description": "Custom Node.js framework for programming patterns laboratory work",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": ["framework", "patterns", "nodejs"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

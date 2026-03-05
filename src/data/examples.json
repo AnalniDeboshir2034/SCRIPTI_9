@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "patternId": "1",
+    "title": "Logger Singleton",
+    "language": "JavaScript",
+    "code": "class Logger {\n  static instance;\n  \n  constructor() {\n    if (Logger.instance) {\n      return Logger.instance;\n    }\n    this.logs = [];\n    Logger.instance = this;\n  }\n  \n  log(message) {\n    this.logs.push(message);\n    console.log(message);\n  }\n}",
+    "difficulty": "beginner",
+    "isComplete": true,
+    "createdAt": "2023-01-15T00:00:00.000Z",
+    "tags": ["logging", "singleton", "patterns"],
+    "rating": 4.5
+  },
+  {
+    "id": "2",
+    "patternId": "2",
+    "title": "Event Emitter",
+    "language": "JavaScript",
+    "code": "class EventEmitter {\n  constructor() {\n    this.events = {};\n  }\n  \n  on(event, listener) {\n    if (!this.events[event]) {\n      this.events[event] = [];\n    }\n    this.events[event].push(listener);\n  }\n  \n  emit(event, data) {\n    if (this.events[event]) {\n      this.events[event].forEach(listener => listener(data));\n    }\n  }\n}",
+    "difficulty": "intermediate",
+    "isComplete": true,
+    "createdAt": "2023-02-20T00:00:00.000Z",
+    "tags": ["events", "observer", "patterns"],
+    "rating": 4.8
+  },
+  {
+    "id": "3",
+    "patternId": "5",
+    "title": "Middleware Decorator",
+    "language": "JavaScript",
+    "code": "function withLogging(fn) {\n  return function(...args) {\n    console.log('Calling function');\n    const result = fn.apply(this, args);\n    console.log('Function called');\n    return result;\n  };\n}",
+    "difficulty": "intermediate",
+    "isComplete": true,
+    "createdAt": "2023-03-10T00:00:00.000Z",
+    "tags": ["decorator", "middleware", "patterns"],
+    "rating": 4.3
+  }
+]
